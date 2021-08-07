@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .button {
@@ -88,6 +88,10 @@ body {
     left: 0;
 }
 
+.header__background .header__background-cloud--small {
+    display: none;
+}
+
 .header__background .header__background-cloud--middle {
     bottom: -150px;
     left: 0;
@@ -95,7 +99,7 @@ body {
 
 .header__background .header__background-cloud--right {
     top: -150px;
-    left: 0;
+    right: 50px;
 }
 
 .find-us {
@@ -116,6 +120,10 @@ body {
     display: flex;
     justify-items: left;
     margin-bottom: 120px;
+}
+
+.find-us .list-mobile {
+    display: none;
 }
 
 .find-us .list__item {
@@ -139,7 +147,7 @@ body {
 
 .section-one {
     display: flex;
-    padding: 80px 400px;
+    padding: 80px 350px;
 }
 
 .description {
@@ -188,6 +196,7 @@ body {
     border: 2px solid white;
     padding: 0 16px 0 18px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .contact-address .contact-address__header .copy-address p {
@@ -212,7 +221,7 @@ body {
 .supplies {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 10%;
+    gap: 48px 7%;
 }
 
 .supplies .supply {
@@ -258,8 +267,8 @@ body {
 .roadmap .circle {
     background-color: #F1F9FE;
     border-radius: 50%;
-    width: 464px;
-    height: 464px;
+    width: 424px;
+    height: 424px;
     position: relative;
 }
 
@@ -289,6 +298,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .drop-down-list__list-item .header::before {
@@ -311,14 +321,24 @@ body {
     background-color: #5ABBF1;
 }
 
+.drop-down-list__list-item {
+    margin-top: 20px;
+}
+
 .internal-list {
     list-style: none;
     margin-bottom: 65px;
+    display: none;
+}
+
+.internal-list-active {
+    display: block;
 }
 
 .internal-list__item {
     position: relative;
     margin: 15px 0 15px 30px;
+    font-weight: medium;
 }
 
 .internal-list__item::before {
@@ -329,8 +349,8 @@ body {
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: rgba(90, 187, 241, 0.2);
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
 }
 
 .background-cloud-1 {
@@ -403,7 +423,149 @@ body {
     text-align: center;
     padding: 40px 0;
     color: rgba(15, 48, 61, 0.8);
+}
+
+@media (max-width: 1800px) {
+    .section-one {
+        padding: 80px 100px;
+    }
+
+    .interaction-container {
+        padding: 0 200px 0 200px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .background-cloud-1 {
+        display: none;
+    }
+
+    .section-two {
+        padding: 124px 200px 0 250px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .header__background-cloud--right, .header__background-cloud--middle, .header__background-cloud--left {
+        display: none;
+    }
+    
+    .header__background .header__background-cloud--small {
+       display: block;
+       top: 50px;
+       right: 100px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .section-one {
+        flex-direction: column;
+    }
+
+    .description {
+        margin: 0;
+    }
+
+    .supplies {
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+
+    .interaction-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 300px;
+    }
+
+    .interaction-container .item__one img {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .interaction-container .item__two {
+        margin-top: 400px;
+    }
+
+    .back-to-top {
+        margin-top: 200px;
+        margin-bottom: 32px;
+    }
 
 }
 
+@media (max-width: 1300px) {
+    .section-two {
+        padding: 124px 100px 0 100px;
+    }
+}
 
+@media (max-width: 1200px) {
+    .header__content {
+        padding-left: 100px;
+    }
+
+    .find-us {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .section-two {
+        flex-direction: column;
+        padding: 124px 200px 0 200px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .background-cloud-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .find-us {
+        padding: 180px 10px 0 10px;
+    }
+}
+
+@media (max-width: 950px) {
+    .find-us .list {
+        display: none;
+    }
+
+    .find-us .list-mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: min-content;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 920px) {
+    .find-us {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        margin: 0 16px;
+    }
+}
+
+@media (max-width: 720px) {
+    .supplies .supply {
+        flex-basis: 100%;
+    }
+
+    .find-us .list-mobile .list__item {
+        width: unset;
+        margin-right: 0;
+    }
+
+    .find-us .list__item-arrow {
+        margin-left: 10px;
+    }
+}
