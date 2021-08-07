@@ -136,12 +136,13 @@ body {
     border-radius: 10px;
     margin-right: 40px;
     cursor: pointer;
-    transition: transform .5s;
+    transition: all .5s;
+    box-sizing: border-box;
 }
 
 .find-us .list__item:hover {
     transform: translateY(-5px);
-    border: 1px solid #5ABBF1;
+    background-color: #80CBF4;
 }
 
 .find-us .list__item-logo {
