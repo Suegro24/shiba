@@ -136,6 +136,12 @@ body {
     border-radius: 10px;
     margin-right: 40px;
     cursor: pointer;
+    transition: transform .5s;
+}
+
+.find-us .list__item:hover {
+    transform: translateY(-5px);
+    border: 1px solid #5ABBF1;
 }
 
 .find-us .list__item-logo {
@@ -318,6 +324,10 @@ body {
     color: #5ABBF1;
 }
 
+.drop-down-list__list-item .header--active img {
+    transform: rotate(180deg);
+}
+
 .drop-down-list__list-item .header--active::before {
     background-color: #5ABBF1;
 }
@@ -329,11 +339,13 @@ body {
 .internal-list {
     list-style: none;
     margin-bottom: 65px;
-    display: none;
+    max-height: 0px;
+    transition: max-height .5s ease-in-out;
+    overflow-y: hidden;
 }
 
 .internal-list-active {
-    display: block;
+    max-height: 250px;
 }
 
 .internal-list__item {

@@ -19,7 +19,6 @@ const changeActiveList = (e) => {
         internalList.classList.remove('internal-list-active')
         image.src="./assets/images/arrow-down-black.svg"
     })
-    console.log(e.target.parentNode.parentNode);
     const header = e.target.parentNode.parentNode.querySelector('.header');
     const internalList = e.target.parentNode.parentNode.querySelector('.internal-list');
     const image = e.target.parentNode.parentNode.querySelector('img');
