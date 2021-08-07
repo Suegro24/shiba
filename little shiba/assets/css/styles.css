@@ -135,6 +135,7 @@ body {
     padding: 22px;
     border-radius: 10px;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .find-us .list__item-logo {
