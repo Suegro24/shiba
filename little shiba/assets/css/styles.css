@@ -142,6 +142,7 @@ body {
 
 .find-us .list__item:hover {
     border: 2px solid #5ABBF1;
+    transform: translateY(-5px);
 }
 
 .find-us .list__item-logo {
