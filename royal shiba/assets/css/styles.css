@@ -641,7 +641,7 @@ body {
     }
 
     .header__content footer button {
-        margin-top: 10px;
-        width: 100% !important;
+        width: 95% !important;
+        margin: 10px auto 0 auto;
     }
 }
