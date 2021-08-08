@@ -633,3 +633,15 @@ body {
         width: 100%;
     }
 }
+
+@media (max-width: 450px) {
+    .header__content footer {
+        flex-direction: column;
+        margin-left: -30px;
+    }
+
+    .header__content footer button {
+        margin-top: 10px;
+        width: 100% !important;
+    }
+}
