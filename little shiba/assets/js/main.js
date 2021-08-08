@@ -56,3 +56,17 @@ const copyText = () => {
 
 copyAddress.addEventListener('click', copyText, false);
 
+const changeCopyImage = (color) => {
+    const copyImage = document.querySelector('#copyImage');
+    if (color == 'blue') {
+        copyImage.setAttribute('src', './assets/images/copy - blue.svg')
+    }
+    else {
+        copyImage.setAttribute('src', './assets/images/copy.svg')
+    }
+}
+
+copyAddress.addEventListener('mouseenter', changeCopyImage.bind(null, 'blue'), false);
+copyAddress.addEventListener('mouseleave', changeCopyImage.bind(null, 'white'), false);
+
+
