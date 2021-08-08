@@ -575,6 +575,14 @@ body {
 }
 
 @media (max-width: 950px) {
+    .find-us {
+        padding: 180px 0 0 0;
+    }
+
+    .find-us .list__item {
+        margin: 0;
+    }
+
     .find-us .list {
         display: none;
     }
