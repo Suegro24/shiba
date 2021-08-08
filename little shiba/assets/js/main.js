@@ -69,4 +69,17 @@ const changeCopyImage = (color) => {
 copyAddress.addEventListener('mouseenter', changeCopyImage.bind(null, 'blue'), false);
 copyAddress.addEventListener('mouseleave', changeCopyImage.bind(null, 'white'), false);
 
+const changeBackToTopButtonImage = (color) => {
+    const backToTopImage = document.querySelector('#backToTopImage');
+    if (color == 'blue') {
+        backToTopImage.setAttribute('src', './assets/images/arrow-top.svg')
+    }
+    else {
+        backToTopImage.setAttribute('src', './assets/images/arrow-top - white.svg')
+    }
+}
+
+backToTopButton.addEventListener('mouseenter', changeBackToTopButtonImage.bind(null, 'white'), false);
+backToTopButton.addEventListener('mouseleave', changeBackToTopButtonImage.bind(null, 'blue'), false);
+
 
