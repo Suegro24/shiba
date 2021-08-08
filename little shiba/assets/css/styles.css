@@ -211,13 +211,14 @@ body {
     width: 140px;
     border: 2px solid white;
     padding: 0 16px 0 18px;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
     transition: all .3s;
 }
 
 .contact-address .contact-address__header .copy-address:hover {
     background-color: white;
+    transform: translateY(-3px);
 }
 
 .contact-address .contact-address__header .copy-address:hover p {
