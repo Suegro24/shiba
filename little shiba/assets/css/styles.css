@@ -705,6 +705,14 @@ body {
     .background-cloud-small {
         right: 0;
     }
+
+    .item__one img {
+        display: none;
+    }
+
+    .item__two img {
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
