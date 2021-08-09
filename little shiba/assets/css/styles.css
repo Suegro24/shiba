@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .unselectable {
@@ -683,8 +684,8 @@ body {
 
 @media (max-width: 650px) {
     .header__background .header__background-cloud--small {
-        right: -50px;
-        width: 250px;
+        right: 0px;
+        width: 150px;
     }
 
     .header__content {
