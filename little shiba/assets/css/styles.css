@@ -728,6 +728,7 @@ body {
 
     .header__content {
         padding: 112px 0 0 0;
+        margin: 0 auto;
     }
 
     .interaction-container {
@@ -738,5 +739,9 @@ body {
     .interaction-container .item__two {
         margin-top: 50px;
         margin-left: 0;
+    }
+
+    .drop-down-list__list-item .header::before {
+        left: -30px;
     }
 }
