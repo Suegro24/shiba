@@ -657,20 +657,12 @@ body {
         font-size: 16px;
     }
 
-    .interaction-container .item__one button {
-        transform: scale(0.8);
-    }
-
     .interaction-container .item__two img {
         width: 450px;
     }
 
     .interaction-container .item__two h2 {
         font-size: 16px;
-    }
-
-    .interaction-container .item__two button {
-        transform: scale(0.8);
     }
 
     .interaction-container .item__two img {
@@ -714,7 +706,37 @@ body {
     }
 
     .header__content-buttons button {
-        width: 95%;
+        width: 100%;
         margin: 10px auto 0 auto;
+    }
+
+    .header__content footer {
+        width: unset;
+    }
+
+    .item__one img{
+        display: none;
+    }
+
+    .item__two img{
+        display: none;
+    }
+
+    .item__two, .item__one {
+        width: 100%;
+    }
+
+    .header__content {
+        padding: 112px 0 0 0;
+    }
+
+    .interaction-container {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .interaction-container .item__two {
+        margin-top: 50px;
+        margin-left: 0;
     }
 }
