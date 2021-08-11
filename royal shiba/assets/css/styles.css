@@ -454,8 +454,8 @@ body {
         padding: 124px 200px 0 250px;
     }
 
-    .header__background {
-        display: none;
+    .header__background img {
+        width: 600px;
     }
 
     .background-image-2 {
@@ -485,6 +485,14 @@ body {
     .supplies {
         margin-top: 40px;
         justify-content: space-between;
+    }
+
+    .header__background img {
+        width: 500px;
+    }
+
+    .header__background {
+        top: 100px;
     }
 
 }
@@ -530,6 +538,12 @@ body {
     .roadmap {
         text-align: center;
         margin: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__background {
+        display: none;
     }
 }
 
@@ -714,4 +728,3 @@ body {
         width: 100%;
     }
 }
-
