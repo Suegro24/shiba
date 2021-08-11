@@ -11,6 +11,11 @@ body {
     margin: 0 auto;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
