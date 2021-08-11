@@ -7,6 +7,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .unselectable {
@@ -778,9 +780,3 @@ body {
         padding-right: 50px !important;
     }
 }
-
-/* @media (max-width: 350px) {
-    .section-one {
-        padding: 30px 50px;
-    }
-} */
