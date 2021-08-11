@@ -772,6 +772,11 @@ body {
     .section-one {
         padding: 5% 10%;
     }
+
+    .section-two {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
 }
 
 /* @media (max-width: 350px) {

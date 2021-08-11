@@ -667,12 +667,6 @@ body {
 }
 
 @media (max-width: 700px) {
-    .section-two {
-        padding: 124px 0 0 0;
-        justify-content: center;
-        align-items: center;
-    }
-
     .interaction-container {
         margin-top: 200px;
     }
@@ -828,10 +822,9 @@ body {
     .section-one {
         padding: 5% 10%;
     }
-}
 
-/* @media (max-width: 350px) {
-    .section-one {
-        padding: 30px 50px;
+    .section-two {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
     }
-} */
+}
