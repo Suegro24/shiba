@@ -811,4 +811,14 @@ body {
         display: flex;
         justify-content: center;
     }
+
+    .section-one {
+        padding: 5% 10%;
+    }
 }
+
+/* @media (max-width: 350px) {
+    .section-one {
+        padding: 30px 50px;
+    }
+} */
