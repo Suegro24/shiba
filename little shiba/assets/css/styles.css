@@ -779,6 +779,19 @@ body {
     .item__two img{
         display: none;
     }
+
+    .interaction-container {
+        margin-top: 0;
+    }
+
+    .interaction-container .item__two {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .back-to-top {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 400px) {
