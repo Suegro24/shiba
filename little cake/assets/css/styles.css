@@ -100,7 +100,7 @@ body {
 
 .background-2 {
     position: absolute;
-    top: 100%;
+    top: 110%;
     right: 0;
     transform: rotate(90deg);
     transform-origin: top right;
@@ -272,6 +272,7 @@ body {
     padding: 124px 300px 0 250px;
     display: flex;
     position: relative;
+    height: 600px;
 }
 
 .roadmap {
@@ -383,7 +384,7 @@ body {
 }
 
 .interaction-container {
-    padding: 0 403px 0 375px;
+    padding: 0 300px 0 350px;
     margin-top: 400px;
     display: flex;
     justify-content: space-between;
@@ -457,7 +458,7 @@ body {
     }
 
     .interaction-container {
-        padding: 0 200px 0 200px;
+        padding: 0 0 0 100px;
     }
 
     .section {
@@ -544,12 +545,20 @@ body {
     .find-us {
         padding-left: 100px;
     }
+
+    .header__background {
+        display: none;
+    }
 }
 
 @media (max-width: 1100px) {
     .section-two {
         flex-direction: column;
         padding: 124px 100px 0 100px;
+    }
+
+    .interaction-container {
+        margin-top: 400px;
     }
 
     .circle {
@@ -607,14 +616,17 @@ body {
 }
 
 @media (max-width: 700px) {
-    .section-two {
-        padding: 124px 0 0 0;
-        justify-content: center;
-        align-items: center;
-    }
-
     .interaction-container {
         margin-top: 200px;
+    }
+
+    .section-two {
+        height: unset;
+    }
+
+    
+    .background-2 {
+        display: none;
     }
 
     .drop-down-list {
@@ -672,6 +684,7 @@ body {
         padding: 0;
         margin-top: 100px;
     }
+
 }
 
 @media (max-width: 500px) {
