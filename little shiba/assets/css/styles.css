@@ -412,7 +412,7 @@ body {
 }
 
 .interaction-container {
-    padding: 0 403px 0 375px;
+    padding: 0 300px 0 350px;
     margin-top: 400px;
     display: flex;
     justify-content: space-between;
@@ -486,7 +486,7 @@ body {
     }
 
     .interaction-container {
-        padding: 0 200px 0 200px;
+        padding: 0 0 0 100px;
     }
 
     .section {
