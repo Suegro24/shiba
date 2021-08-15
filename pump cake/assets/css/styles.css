@@ -782,6 +782,12 @@ body {
     }
 }
 
+@media (max-width: 550px) { 
+    .phases div {
+        width: 95%;
+    }
+}
+
 @media (max-width: 500px) {
     .phases .phase {
         width: 100%;
@@ -799,8 +805,13 @@ body {
     }
 
     .contact-address .contact-address__header .copy-address {
-        padding: 10px;
+        padding: 10px 0;
         margin-top: 10px;
+        justify-content: center;
+    }
+
+    .contact-address .contact-address__header .copy-address img {
+        margin-right: 5px;
     }
 
     .roadmap {
@@ -811,6 +822,10 @@ body {
         left: 50%;
         transform: translateX(-50%);
         top: 170px;
+    }
+
+    .phases div .phase {
+        padding: 20px 5px;
     }
 }
 
@@ -825,6 +840,11 @@ body {
 
     .description h2, .description > p {
         padding: 0 20px;
+    }
+
+    .section-two .menu {
+        width: 100%;
+        text-align: center;
     }
     
 }
