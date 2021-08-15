@@ -311,6 +311,7 @@ body {
 
 .section-two .menu .arrow {
     cursor: pointer;
+    transition: all .5s;
 }
 
 .section-two .menu .arrow--right:hover {
@@ -333,18 +334,20 @@ body {
 
 .phases {
     display: flex;
+    position: relative;
 }
 
 .phases div {
     display: flex;
     width: 100%;
+    transition: opacity .3s ease-in-out;
+    transition-delay: .1s;
+    opacity: 1;
 }
 
 .phases .phase {
     position: relative;
     padding: 32px 40px 0 40px;
-    /* border-top: 3px dashed #9C5AF1;
-    border-right: 3px dashed #9C5AF1; */
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right, #9C5AF1 33%, #ffffff 0%);
@@ -383,7 +386,8 @@ body {
 }
 
 .phases .phase--hidden {
-    display: none;
+    opacity: 0;
+    position: absolute;
 }
 
 .phases .phase h2 {
